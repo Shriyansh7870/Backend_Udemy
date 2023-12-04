@@ -36,8 +36,8 @@ app.post("/out/create-checkout-session", async (req, res) => {
     payment_method_types: ["card"],
     line_items: lineItems,
     mode: "payment",
-    success_url: "http://localhost:4000/",
-    cancel_url: "http://localhost:4000/",
+    success_url: "https://main--sparkling-dasik-8e2846.netlify.app/",
+    cancel_url: "https://main--sparkling-dasik-8e2846.netlify.app/",
   });
   res.json({ id: session.id });
 });

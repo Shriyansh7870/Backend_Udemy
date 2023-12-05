@@ -5,6 +5,7 @@ const {
   datafind2,
   imagedata,
   imagefind,
+  searchProducts,
 } = require("../callback/callback");
 const { register, login } = require("../function/function");
 const allcomponet = require("express").Router();
@@ -22,5 +23,6 @@ allcomponet.post("/imagedata", imagedata);
 allcomponet.get("/imagefind", imagefind);
 allcomponet.post("/register", register);
 allcomponet.post("/login", login);
+allcomponet.get("/searchdata", searchProducts);
 
 module.exports = allcomponet;

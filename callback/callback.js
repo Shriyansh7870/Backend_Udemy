@@ -55,6 +55,23 @@ const datafind2 = async (req, res) => {
   }
 };
 
+const searchProducts = async (req, res) => {
+  const { type } = req.query;
+
+  const queryObj = {};
+  if (type) {
+    queryObj.name = { $regex: type, $options: "i" };
+  }
+
+  try {
+    const searchedData = await Product.find(queryObj);
+    res.send(searchedData);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
 module.exports = {
   EnterData,
   datafind,
@@ -62,4 +79,5 @@ module.exports = {
   datafind2,
   imagedata,
   imagefind,
+  searchProducts,
 };

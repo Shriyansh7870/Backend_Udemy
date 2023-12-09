@@ -5348,6 +5348,20 @@ const AllData = [
     description:
       "Enhance your vocal performances with ornamentation and style techniques, adding unique flair and personality to your singing across genres.",
   },
+  {
+    id: "367",
+    name: "Engineering Study",
+    type: "JavaScript",
+    text: "Complete JAVASCRIPT with HTML5,CSS3 from zero to Expert-2023",
+    Teacher: "Hemanth kumar",
+    image: "https://img-c.udemycdn.com/course/750x422/3726582_f4a7.jpg",
+    price: "389",
+    Rating: "4.3 ",
+    view: "4,005",
+    duraction: "6 hours",
+    description:
+      "Learn HTML5, CSS3, JavaScript by building a modern looking responsive website.",
+  },
 ];
 const Teacher = [
   {
